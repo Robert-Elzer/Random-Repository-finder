@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Github Repository Finder</title>
+</head>
+<body>
+    <header>
+        <h1>Github Repository Finder</h1>        
+    </header>
+
+    <main class="container">
+        <div class="controls">
+            <label for="language-select"></label>
+            <select id="language-select">
+                <option value="" disabled selected>Select a Language</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Tailwind">Tailwind</option>
+                <option value="Python">Python</option>
+                <option value="PHP">PHP</option>
+                <option value="C++">C++</option>
+                <option value="C#">C#</option>
+            </select>
+            
+            <button id="fetch-button" class="hidden">
+                Fetch Repository
+            </button>
+
+            <button id="refresh-button" class="hidden">
+                <i class="fas fa-sync-alt"></i> Refresh
+            </button>
+        </div>
+
+        <div id="status-message">
+        </div>
+
+        <div id="Repository-details" class="hidden">
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
